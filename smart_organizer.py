@@ -1,10 +1,10 @@
 import os
 import shutil
 
-# Βρίσκει αυτόματα το home directory του χρήστη (λειτουργεί σε κάθε PC!)
+# finds home directory of the user
 home_dir = os.path.expanduser("~")
 
-# Ορίζει αυτόματα τα Downloads και το Desktop ανεξαρτήτως ονόματος χρήστη
+#searches files from Downloads and will move them to the respective Desktop folders
 source_folder = os.path.join(home_dir, "Downloads")
 desktop_path = os.path.join(home_dir, "Desktop")
 
